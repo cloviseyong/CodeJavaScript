@@ -13,7 +13,143 @@
 
   <script>
 
+  //   // Creating and calling functions
+
+  //  function greeting(){
+  //   console.log("Hello")
+  //  }
+  //  greeting();
+
+  //  // functions are values
+
+  // //  const num = 2;
+
+  // //  const function1 = function greeting(){
+  // //   console.log("hello2");
+  // //  }
+  // //  function1();
+  // //  console.log(function1);
+  // //  console.log(typeof function1);
+
+
+  // // Anonymous functions same as above
+
+  //  const num = 2;
+
+  //  const function1 = function(){
+  //   console.log("hello2");
+  //  }
+  //  function1();
+  //  console.log(function1);
+  //  console.log(typeof function1);
+
+
+
+  //  // Method when function is saved inside an object.
+  //   const object1 = {
+  //     num: 2,
+  //     fun:function(){
+  //       console.log('hello3');
+  //     }
+  //   }
+  //   console.log(object1.fun());
+
+
+  //   // Passing a value to a function
+
+  //   function display(param){
+  //     console.log(param);
+
+  //   }
+  //   display(2);
+
+  //   // passing a function into a function
+
+  //   function run(param){
+  //     param();
+
+  //   }
+  //   run(function(){
+  //     console.log("hello4")
+    
+  //   });
+
+  // setTimeout(function(){
+  //   console.log('time out');
+  // },3000);
+
+  // console.log('next line');
+
+  // setInterval(function(){
+  //   console.log('set interval');
+  // },3000);
+
+  // [
+  //   'make dinner',
+  //   'wash dress',
+  //   'watch youtube'
+
+  // ].forEach(function(value, index){
+
+  //   if(value === 'wash dishes'){
+  //     return;
+
+  //   }
+  //   console.log(value);
+  //   console.log(index);
+
+  // });
+
+  // const regularFunction = function(param ,param2){
+  //   consile.log('hello');
+  //   return 5;
+  // }
+
+  // const arrowFunction = (param,param2) => {
+  //   console.log('hello');
+  //   return 5;
+  // }
+  //   arrowFunction();
+
+  //   const oneParam = param => {
+  //     console.log(param + 1);
+  //   }
+  //   oneParam(3);
+
+  //   // one line arrow function
+
+  //   const oneLine = () =>  2 + 3;
+  //   console.log(oneLine());
+    
+    // array filter
+
+   const arrayFilter = [1, -3, 5].filter((value, index)=>{
+
+      if(value >= 0){
+        return true;
+      }else{
+        return false;
+      }
+    });
+    console.log(arrayFilter);
+
+    // array map
+
+   const arrayMap = [1,1,3].map((value, index)=>{
+      return value + 10;
+
+    });
+    console.log(arrayMap);
+
+
+    // same as code above (shortcut)
+
+    const arrayMap1 = [1,1,3].map(value=>{return
+       value + 10;});
    
+
+    
+    
 
   </script>
   </body>
