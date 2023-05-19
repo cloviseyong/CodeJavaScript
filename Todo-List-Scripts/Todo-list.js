@@ -1,16 +1,30 @@
 
+
 const todoList =['make dinner', 'wash dishes'];
-let todoListHTML = '';
 
 
-for (let i = 0; i < todoList.length; i++){  /* looping through */
-  const todo = todoList[i];   /* variable to store the list */
-  const html =`<p> ${todo}</p>`; /* html to put the list items */
+function renderTodoList(){
+
+  let todoListHTML = '';
+
+
+  // Generating the HTML technique
+
+for (let i = 0; i < todoList.length; i++){  
+  const todo = todoList[i];   
+  const html =`<p> ${todo}<button></button></p>`; 
   todoListHTML  += html;
 }
 console.log(todoListHTML);
 document.querySelector('.js-todo-list')
-.innerHTML = todoListHTML;
+.innerText = todoList;
+
+
+
+
+}
+
+
 
 function addTodo(){
  const inputElem = document.querySelector('.js-name-input');
@@ -20,5 +34,9 @@ function addTodo(){
  console.log(todoList);
 
  inputElem.value = '';
+ 
+ renderTodoList();
+
+
 
 }
